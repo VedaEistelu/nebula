@@ -14,7 +14,8 @@ TEST(Duration, elapsedInSeconds) {
     for (int i = 0; i < 5; i++) {
         Duration dur;
         auto start = std::chrono::steady_clock::now();
-        sleep(2);
+        sleep(1);
+        //  change 2 to 1
         auto diff = std::chrono::steady_clock::now() - start;
         dur.pause();
 
